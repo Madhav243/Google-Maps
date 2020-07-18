@@ -63,7 +63,7 @@ for line in fh:
         VALUES ( ?, ? )''', (memoryview(address.encode()), memoryview(data.encode()) ) )
     conn.commit()
 
-    fh.close()
+fh.close()
 
 
 
